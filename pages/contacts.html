@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Контакты — Арменак Варданович</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">MAV</div>
+      <div class="title">
+        <h1>Меликян Арменак Варданович</h1>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Главная</a>
+      <a href="projects.html">Проекты</a>
+      <a href="diary.html">Дневник</a>
+      <a href="contacts.html" class="active">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Свяжитесь со мной</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>Имя<input type="text" id="name" required></label>
+        <label>Email<input type="email" id="email" required></label>
+        <label>Сообщение<textarea id="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Отправить сообщение</button>
+      </form>
+
+      <div class="contact-info">
+        <p>📧 melikyan.a.v@edu.mirea.ru</p>
+        <p>GitHub: <a href="https://github.com/XsamiDa">XsamiDa</a></p>
+        <p>Москва, Россия</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Арменак Варданович</p>
+  </footer>
+
+  <script src="../scripts/form-validation.js"></script>
+</body>
+</html>

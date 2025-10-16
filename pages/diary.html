@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Дневник — Арменак Варданович</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">MAV</div>
+      <div class="title">
+        <h1>Меликян Арменак Варданович</h1>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Главная</a>
+      <a href="projects.html">Проекты</a>
+      <a href="diary.html" class="active">Дневник</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Учебный дневник</h2>
+
+      <form id="entryForm" class="entry-form">
+        <input type="date" id="eDate" required>
+        <input type="text" id="eTitle" placeholder="Тема / Название" required>
+        <textarea id="eText" placeholder="Краткое описание" rows="3" required></textarea>
+        <button type="submit" class="btn">Добавить запись</button>
+      </form>
+
+      <ul id="entries" class="entries">
+        <li><strong>15 дек</strong> — Верстка макета сайта ✓</li>
+        <li><strong>10 дек</strong> — JavaScript основы ✓</li>
+      </ul>
+    </section>
+      <section class="skills">
+      <h3>Текущие курсы</h3>
+      <ul class="skill-list">
+        <li><span>веб‑разработка</span><div class="bar"><div style="--p:95%"></div><span class="percent">95%</span></div></li>
+        <li><span>JavaScript</span><div class="bar"><div style="--p:64%"></div><span class="percent">64%</span></div></li>
+        <li><span>Bootstrap</span><div class="bar"><div style="--p:46%"></div><span class="percent">46%</span></div></li>
+      </ul>
+    </section>
+  </main>
+
+
+
+  <footer class="site-footer">
+    <p>© 2025 Арменак Варданович</p>
+  </footer>
+
+  <script src="../scripts/form-validation.js"></script>
+  <script src="../scripts/modal.js"></script>
+</body>
+</html>

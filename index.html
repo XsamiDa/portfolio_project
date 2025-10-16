@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Портфолио — Меликян Арменак Варданович</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">MAV</div>
+      <div class="title">
+        <h1>Меликян Арменак Варданович</h1>
+        <p class="subtitle">Группа ЭФБО-11-24</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="pages/projects.html">Проекты</a>
+      <a href="pages/diary.html">Дневник</a>
+      <a href="pages/contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="images/photo_2025-10-16_14-57-23.jpg" alt="Фото студента" class="photo">
+      <div class="intro">
+        <h2>Привет! Я студент и веб‑разработчик</h2>
+        <p>Увлекаюсь фронтендом, создаю адаптивные и красивые интерфейсы. Здесь — мои проекты, учебный прогресс и контакты.</p>
+        <p><a class="btn" href="assets/resume.pdf" download>Скачать резюме</a></p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h3>Мои навыки</h3>
+      <ul class="skill-list">
+        <li><span>HTML/CSS</span><div class="bar"><div style="--p:90%"></div><span class="percent">90%</span></div></li>
+        <li><span>JavaScript</span><div class="bar"><div style="--p:80%"></div><span class="percent">80%</span></div></li>
+        <li><span>Bootstrap</span><div class="bar"><div style="--p:85%"></div><span class="percent">85%</span></div></li>
+        <li><span>React</span><div class="bar"><div style="--p:60%"></div><span class="percent">60%</span></div></li>
+      </ul>
+    </section>
+
+    <section class="projects-preview">
+      <h3>Лучшие проекты</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="images/project1.svg" alt="Проект 1">
+          <h4>Личный сайт</h4>
+          <p>HTML/CSS — адаптивная верстка.</p>
+          <button class="open" data-project="1">Подробнее</button>
+        </article>
+        <article class="card">
+          <img src="images/project2.svg" alt="Проект 2">
+          <h4>Todo-приложение</h4>
+          <p>Vanilla JS — работа с localStorage.</p>
+          <button class="open" data-project="2">Подробнее</button>
+        </article>
+        <article class="card">
+          <img src="images/project3.svg" alt="Проект 3">
+          <h4>Интернет‑магазин</h4>
+          <p>React — корзина и фильтры.</p>
+          <button class="open" data-project="3">Подробнее</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Арменак Варданович</p>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-body">
+      <button id="closeModal" class="modal-close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
