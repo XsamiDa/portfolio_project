@@ -1,4 +1,3 @@
-// filters.js - simple client-side filtering
 document.addEventListener('DOMContentLoaded', function(){
   const buttons = document.querySelectorAll('.filter');
   const cards = document.querySelectorAll('#projectsGrid .card');

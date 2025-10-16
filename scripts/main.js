@@ -1,4 +1,3 @@
-// main.js - modal opener and basic interactions
 document.addEventListener('click', function(e){
   if(e.target.matches('.open')){
     const id = e.target.dataset.project;
@@ -11,15 +10,15 @@ function openModal(id){
   const data = {
     "1": {
       title: "Личный сайт",
-      body: "<p>Подробное описание проекта 1. Технологии: HTML, CSS.</p><p><a href='#'>Исходный код</a></p>"
+      body: "<p>проект 1. Технологии: HTML, CSS.</p><p><a href='https://xsamida.github.io/frontend-and-backend-practice'>Перейти на сайт</a></p>"
     },
     "2": {
-      title: "Todo-приложение",
-      body: "<p>Подробное описание проекта 2. Технологии: JavaScript.</p><p><a href='#'>Исходный код</a></p>"
+      title: "Лагерь для взрослых - Artful Solution",
+      body: "<p>проект 2. Технологии: HTML, CSS.</p><p><a href='#'>Перейти на сайт</a></p>"
     },
     "3": {
       title: "Интернет-магазин",
-      body: "<p>Подробное описание проекта 3. Технологии: React.</p><p><a href='#'>Исходный код</a></p>"
+      body: "<p>проект 3. Технологии: React. *в разработке</p><p><a href='#'>Исходный код</a></p>"
     }
   };
   content.innerHTML = '<h3 style="color:var(--accent)">'+data[id].title+'</h3>' + data[id].body;

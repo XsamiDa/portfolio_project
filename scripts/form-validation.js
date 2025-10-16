@@ -1,4 +1,3 @@
-// form-validation.js - simple client-side form handling and localStorage for diary
 document.addEventListener('DOMContentLoaded', function(){
   const entryForm = document.getElementById('entryForm');
   if(entryForm){
