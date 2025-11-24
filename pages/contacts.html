@@ -24,20 +24,36 @@
 
   <main class="container">
     <section>
-      <h2>Свяжитесь со мной</h2>
-      <form id="contactForm" class="contact-form" novalidate>
-        <label>Имя<input type="text" id="name" required></label>
-        <label>Email<input type="email" id="email" required></label>
-        <label>Сообщение<textarea id="message" rows="5" required></textarea></label>
-        <button type="submit" class="btn">Отправить сообщение</button>
-      </form>
+    <h2>Свяжитесь со мной</h2>
 
-      <div class="contact-info">
-        <p>📧 melikyan.a.v@edu.mirea.ru</p>
-        <p>GitHub: <a href="https://github.com/XsamiDa">XsamiDa</a></p>
-        <p>Москва, Россия</p>
-      </div>
-    </section>
+    <div class="contacts-layout">
+        <form class="contact-form">
+            <div class="contact-form__group">
+                <label class="contact-form__label" for="name">Имя</label>
+                <input class="contact-form__input" id="name" type="text" placeholder="Введите имя">
+            </div>
+
+            <div class="contact-form__group">
+                <label class="contact-form__label" for="email">Email</label>
+                <input class="contact-form__input" id="email" type="email" placeholder="you@example.com">
+            </div>
+
+            <div class="contact-form__group">
+                <label class="contact-form__label" for="message">Сообщение</label>
+                <textarea class="contact-form__textarea" id="message" placeholder="Ваше сообщение"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Отправить сообщение</button>
+        </form>
+
+        <div class="contact-info">
+            <p class="contact-info__item">📧 melikyan.a.v@edu.mirea.ru</p>
+            <p class="contact-info__item">GitHub: XsamiDa</p>
+            <p class="contact-info__item">Москва, Россия</p>
+        </div>
+    </div>
+</section>
+
   </main>
 
   <footer class="site-footer">

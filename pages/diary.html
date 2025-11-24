@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Дневник — Арменак Варданович</title>
   <link rel="stylesheet" href="../styles/styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="brand">
@@ -26,26 +28,46 @@
     <section>
       <h2>Учебный дневник</h2>
 
-      <form id="entryForm" class="entry-form">
-        <input type="date" id="eDate" required>
-        <input type="text" id="eTitle" placeholder="Тема / Название" required>
-        <textarea id="eText" placeholder="Краткое описание" rows="3" required></textarea>
-        <button type="submit" class="btn">Добавить запись</button>
-      </form>
+      <div class="diary-timeline">
+        <article class="diary-item">
+          <div class="diary-item__date">15 дек</div>
+          <div class="diary-item__text">Верстка макета сайта ✓</div>
+        </article>
 
-      <ul id="entries" class="entries">
-        <li><strong>15 дек</strong> — Верстка макета сайта ✓</li>
-        <li><strong>10 дек</strong> — JavaScript основы ✓</li>
-      </ul>
+        <article class="diary-item">
+          <div class="diary-item__date">10 дек</div>
+          <div class="diary-item__text">JavaScript основы ✓</div>
+        </article>
+      </div>
     </section>
-      <section class="skills">
-      <h3>Текущие курсы</h3>
-      <ul class="skill-list">
-        <li><span>веб‑разработка</span><div class="bar"><div style="--p:95%"></div><span class="percent">95%</span></div></li>
-        <li><span>JavaScript</span><div class="bar"><div style="--p:64%"></div><span class="percent">64%</span></div></li>
-        <li><span>Bootstrap</span><div class="bar"><div style="--p:46%"></div><span class="percent">46%</span></div></li>
-      </ul>
+
+    <section>
+      <h2>Текущие курсы</h2>
+
+      <div class="courses-list">
+        <div class="course-row">
+          <div class="course-row__name">Веб‑разработка</div>
+          <div class="course-row__bar">
+            <div class="course-row__bar-fill" style="width:95%"></div>
+          </div>
+        </div>
+
+        <div class="course-row">
+          <div class="course-row__name">JavaScript</div>
+          <div class="course-row__bar">
+            <div class="course-row__bar-fill" style="width:64%"></div>
+          </div>
+        </div>
+
+        <div class="course-row">
+          <div class="course-row__name">Bootstrap</div>
+          <div class="course-row__bar">
+            <div class="course-row__bar-fill" style="width:46%"></div>
+          </div>
+        </div>
+      </div>
     </section>
+
   </main>
 
 
@@ -57,4 +79,5 @@
   <script src="../scripts/form-validation.js"></script>
   <script src="../scripts/modal.js"></script>
 </body>
+
 </html>

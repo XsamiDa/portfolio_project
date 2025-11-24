@@ -11,6 +11,12 @@
   box-sizing: border-box
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -166,6 +172,31 @@ body {
   gap: 16px
 }
 
+/* Сетка на отдельной странице проектов */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.project-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #111;
+}
+
 .card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
   padding: 12px;
@@ -256,6 +287,52 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.02)
 }
 
+/* Контакты */
+.contacts-layout {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 20px;
+}
+
+.contact-form__group {
+    margin-bottom: 10px;
+}
+
+.contact-form__label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: var(--muted);
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%;
+    padding: 9px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font: inherit;
+}
+
+.contact-form__textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.contact-info {
+    background: var(--glass);
+    border-radius: 14px;
+    padding: 16px 18px;
+}
+
+.contact-info__item {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
 .entry-form input,
 .entry-form textarea,
 .contact-form input,
@@ -266,6 +343,22 @@ body {
   border-radius: 8px;
   color: #fff
 }
+
+/* Адаптивность форм */
+@media (max-width:480px) {
+    .entry-form input,
+    .entry-form textarea,
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .entry-form button,
+    .contact-form button {
+        width: 100%;
+    }
+}
+
 
 .filters {
   display: flex;
@@ -288,6 +381,67 @@ body {
   border-color: transparent
 }
 
+/* Дневник */
+.diary-timeline {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.diary-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: var(--glass);
+}
+
+.diary-item__date {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.diary-item__text {
+    font-size: 14px;
+}
+
+/* Курсы = адаптивная «таблица» */
+.courses-list {
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.course-row {
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: var(--glass);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-row__name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.course-row__bar {
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+}
+
+.course-row__bar-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+
 @media (max-width:700px) {
   .hero {
     grid-template-columns: 1fr;
@@ -303,4 +457,67 @@ body {
     gap: 6px;
     overflow: auto
   }
+
+  .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+  .diary-item {
+        grid-template-columns: 1fr;
+    }
+
+    .course-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts-layout {
+        grid-template-columns: 1fr;
+    }
 }
+
+@media (max-width:480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .site-header {
+        padding: 12px 14px;
+    }
+
+    .nav a {
+        margin-left: 8px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .modal-body {
+        padding: 14px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+
+    .contact-form {
+        padding: 14px 12px;
+    }
+
+    .contact-form__input,
+    .contact-form__textarea {
+        font-size: 14px;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+    }
+}
+
