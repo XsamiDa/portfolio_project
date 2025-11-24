@@ -15,6 +15,13 @@
         <p class="subtitle">Группа ЭФБО-11-24</p>
       </div>
     </div>
+
+    <button class="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <nav class="nav">
       <a href="index.html" class="active">Главная</a>
       <a href="pages/projects.html">Проекты</a>
@@ -80,5 +87,17 @@
   </div>
 
   <script src="scripts/main.js"></script>
+  <script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav');
+
+  if (burger && nav) {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-open');
+      nav.classList.toggle('is-open');
+    });
+  }
+</script>
+
 </body>
 </html>

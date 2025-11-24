@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Контакты — Арменак Варданович</title>
   <link rel="stylesheet" href="../styles/styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="brand">
@@ -14,6 +16,13 @@
         <h1>Меликян Арменак Варданович</h1>
       </div>
     </div>
+
+    <button class="burger" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="nav">
       <a href="../index.html">Главная</a>
       <a href="projects.html">Проекты</a>
@@ -24,35 +33,35 @@
 
   <main class="container">
     <section>
-    <h2>Свяжитесь со мной</h2>
+      <h2>Свяжитесь со мной</h2>
 
-    <div class="contacts-layout">
+      <div class="contacts-layout">
         <form class="contact-form">
-            <div class="contact-form__group">
-                <label class="contact-form__label" for="name">Имя</label>
-                <input class="contact-form__input" id="name" type="text" placeholder="Введите имя">
-            </div>
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="name">Имя</label>
+            <input class="contact-form__input" id="name" type="text" placeholder="Введите имя">
+          </div>
 
-            <div class="contact-form__group">
-                <label class="contact-form__label" for="email">Email</label>
-                <input class="contact-form__input" id="email" type="email" placeholder="you@example.com">
-            </div>
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="email">Email</label>
+            <input class="contact-form__input" id="email" type="email" placeholder="you@example.com">
+          </div>
 
-            <div class="contact-form__group">
-                <label class="contact-form__label" for="message">Сообщение</label>
-                <textarea class="contact-form__textarea" id="message" placeholder="Ваше сообщение"></textarea>
-            </div>
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="message">Сообщение</label>
+            <textarea class="contact-form__textarea" id="message" placeholder="Ваше сообщение"></textarea>
+          </div>
 
-            <button type="submit" class="btn">Отправить сообщение</button>
+          <button type="submit" class="btn">Отправить сообщение</button>
         </form>
 
         <div class="contact-info">
-            <p class="contact-info__item">📧 melikyan.a.v@edu.mirea.ru</p>
-            <p class="contact-info__item">GitHub: XsamiDa</p>
-            <p class="contact-info__item">Москва, Россия</p>
+          <p class="contact-info__item">📧 melikyan.a.v@edu.mirea.ru</p>
+          <p class="contact-info__item">GitHub: XsamiDa</p>
+          <p class="contact-info__item">Москва, Россия</p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
   </main>
 
@@ -62,4 +71,5 @@
 
   <script src="../scripts/form-validation.js"></script>
 </body>
+
 </html>
